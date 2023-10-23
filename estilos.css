@@ -1,0 +1,94 @@
+/* Fonte do site */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Cabeçalho (header) */
+header {
+    background-color: #333; /* Cor fundo */
+    color: white; /* Cor texto */
+    text-align: center; /* Deixar texto alinhado*/
+    padding: 1em 0; /
+}
+
+
+/* Itens da barra de navegação */
+nav li {
+    display: inline; 
+    margin: 0 1em; 
+}
+
+
+/* Seções (section) */
+section {
+    padding: 2em; /* Espaçamento interno em todas as seções */
+}
+
+
+h2 {
+    color: #6474b5; /* Cor do texto do título */
+}
+
+
+/* Estilizando o formulário */
+form {
+    max-width: 400px; /* Largura máxima */
+    margin: 0 auto; /* Centralizando */
+}
+
+label {
+    display: block; /* Exibindo os rótulos em novas linhas */
+    margin-bottom: 0.5em; /* Espaçamento inferior entre os rótulos */
+}
+
+
+/* Estilizando o botão de envio (button) */
+button[type="submit"] {
+    background-color: #495397d1; /* Cor de fundo do botão */
+    color: rgb(15, 13, 13); /* Cor do texto do botão */
+    padding: 0.5em 1em; /* Espaçamento interno do botão */
+    border: none; /* Removendo a borda */
+    border-radius: 3px; /* Cantos arredondados */
+    cursor: pointer; /* Alterando o cursor ao passar o mouse sobre o botão */
+}
+
+
+/* Efeito de hover para o botão */
+button[type="submit"]:hover {
+    background-color: #555; /* Cor de fundo quando o mouse passa sobre o botão */
+}
+/* Barra de navegação (nav) */
+nav ul {
+    list-style: none; /* Removendo os marcadores de lista */
+    padding: 0; /* Removendo o preenchimento padrão */
+}
+
+
+/* Links da barra de navegação */
+nav a {
+    text-decoration: none; /* Removendo a decoração de link sublinhado */
+    color: rgb(255, 255, 255); /* Cor do texto */
+}
+
+
+/* Estilizando os campos de entrada (input) e área de texto (textarea) */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Largura total do elemento */
+    padding: 0.5em; /* Espaçamento interno */
+    margin-bottom: 1em; 
+    border: 1px solid #ccc; /* Estilo da borda com uma cor cinza */
+    border-radius: 3px; /* Cantos arredondados */
+    outline: none; /* Remove a borda de foco padrão */
+    transition: border 0.3s; 
+
+    /* Estilos quando o elemento está com foco (focus) */
+    &:focus {
+        border: 1px solid #268fff; /* Cor da borda ao receber foco */
+    }
+}
